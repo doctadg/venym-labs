@@ -3,7 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: 'standalone',
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     domains: [],
     formats: ['image/avif', 'image/webp'],
@@ -19,7 +18,7 @@ const nextConfig: NextConfig = {
   experimental: {
     // Enable modern features
     serverActions: {
-      allowedOrigins: ['localhost:3000', 'venym-labs.vercel.app'],
+      allowedOrigins: ['localhost:3000', 'venymlabs.xyz'],
     },
   },
 };

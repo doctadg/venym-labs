@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import Layout from '@/components/Layout';
 import BlockchainDevelopmentHero from '@/components/sections/BlockchainDevelopmentHero';
 import BlockchainDevelopmentCard from '@/components/sections/BlockchainDevelopmentCard';
@@ -15,13 +15,14 @@ import { Box, Container, Grid, Typography } from '@mui/material';
 import { FormattedMessage } from 'react-intl';
 import Contact from '@/components/sections/Contact';
 
-export default function BlockchainDevelopmentPage() {
+// Client component that safely uses useSearchParams
+function BlockchainContent() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const locale = searchParams.get('locale') || 'en';
   const canonicalUrl = `https://venymlabs.com${pathname}`;
 
-const blockchainServices = [
+  const blockchainServices = [
     { id: 'smart-contracts' },
     { id: 'decentralized-apps' },
     { id: 'nft-development' },
@@ -29,7 +30,7 @@ const blockchainServices = [
 ];
 
   return (
-    <Layout>
+    <>
       {/* SEO Optimization */}
       <BlockchainSEO 
         canonicalUrl={canonicalUrl}
@@ -75,6 +76,17 @@ const blockchainServices = [
       
       {/* Contact Section */}
       <Contact />
+    </>
+  );
+}
+
+// Main page component with Suspense boundary
+export default function BlockchainDevelopmentPage() {
+  return (
+    <Layout>
+      <Suspense fallback={<div>Loading...</div>}>
+        <BlockchainContent />
+      </Suspense>
     </Layout>
   );
 }
