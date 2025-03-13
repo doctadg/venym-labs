@@ -1,0 +1,223 @@
+{
+  "common": {
+    "language": "English",
+    "languageToggle": "Switch to Thai"
+  },
+  "nav": {
+    "home": "Home",
+    "agents": "AI Agents",
+    "blockchain": "Blockchain",
+    "blockchain-develop": "Blockchain Development",
+    "services": "Services",
+    "pricing": "Pricing",
+    "memberships": "Memberships",
+    "resources": "Resources",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Next-Gen AI Agents for Your Business",
+    "subtitle": "Venym Labs delivers cutting-edge AI and blockchain solutions to transform your business operations",
+    "cta": "Explore Agents"
+  },
+  "agents": {
+    "title": "AI Agents Catalog",
+    "subtitle": "Discover our collection of ready-to-deploy AI agents",
+    "viewDetails": "View Details",
+    "agent1": {
+      "name": "Sentinel-3",
+      "description": "Advanced threat detection agent with real-time monitoring and response capabilities",
+      "price": "$99/month"
+    },
+    "agent2": {
+      "name": "Econosight",
+      "description": "Market prediction AI that analyzes trends and provides actionable financial insights",
+      "price": "$249/month"
+    },
+    "agent3": {
+      "name": "ContentForge",
+      "description": "AI content creation assistant that generates high-quality marketing materials",
+      "price": "$149/month"
+    },
+    "agent4": {
+      "name": "DataHarvest",
+      "description": "Intelligent data collection and analysis agent for business intelligence",
+      "price": "$199/month"
+    }
+  },
+  "blockchain": {
+    "title": "Blockchain Integrations",
+    "subtitle": "Seamless integration with all major blockchain platforms",
+    "description": "Our solutions work with all L1 and L2 blockchain networks, providing maximum flexibility for your projects",
+    "supportedChains": "Supported Chains",
+    "customSolutions": "Need a custom blockchain solution? Contact us for specialized development services."
+  },
+  "services": {
+    "title": "Service Portfolio",
+    "subtitle": "Comprehensive AI and blockchain development services",
+    "service1": {
+      "title": "Custom AI Development",
+      "description": "Tailored AI solutions designed specifically for your business needs"
+    },
+    "service2": {
+      "title": "Blockchain Integration",
+      "description": "Seamless integration of blockchain technology into your existing systems"
+    },
+    "service3": {
+      "title": "Smart Contract Development",
+      "description": "Secure and efficient smart contracts for your decentralized applications"
+    },
+    "service4": {
+      "title": "AI Consulting",
+      "description": "Expert guidance on implementing AI strategies in your organization"
+    }
+  },
+  "pricing": {
+    "title": "Pricing Tiers",
+    "subtitle": "Flexible pricing options for businesses of all sizes",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "basic": {
+      "title": "Basic",
+      "price": "$499",
+      "description": "Essential AI tools for small businesses",
+      "features": [
+        "2 AI agents",
+        "Basic support",
+        "Limited analytics",
+        "Standard API access"
+      ]
+    },
+    "pro": {
+      "title": "Professional",
+      "price": "$999",
+      "description": "Advanced solutions for growing companies",
+      "features": [
+        "5 AI agents",
+        "Priority support",
+        "Full analytics suite",
+        "Extended API access",
+        "Custom integrations"
+      ]
+    },
+    "enterprise": {
+      "title": "Enterprise",
+      "price": "Custom",
+      "description": "Comprehensive solutions for large organizations",
+      "features": [
+        "Unlimited agents",
+        "24/7 dedicated support",
+        "Advanced analytics",
+        "Full API access",
+        "Custom development",
+        "On-premise deployment"
+      ]
+    }
+  },
+  "memberships": {
+    "title": "Membership Plans",
+    "subtitle": "Join our ecosystem with exclusive benefits",
+    "basic": {
+      "title": "Basic Membership",
+      "price": "$49/month",
+      "features": [
+        "Access to 2 agents",
+        "Community support",
+        "Monthly newsletter",
+        "Basic documentation"
+      ]
+    },
+    "pro": {
+      "title": "Pro Membership",
+      "price": "$199/month",
+      "features": [
+        "Access to all agents",
+        "Priority support",
+        "Weekly strategy calls",
+        "Advanced documentation",
+        "Early access to new features"
+      ]
+    }
+  },
+  "resources": {
+    "title": "Resources Library",
+    "subtitle": "Educational materials and documentation",
+    "documentation": "Documentation",
+    "tutorials": "Tutorials",
+    "casestudies": "Case Studies",
+    "blog": "Blog"
+  },
+  "contact": {
+    "title": "Contact & Demo",
+    "subtitle": "Get in touch with our team",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit",
+    "requestDemo": "Request Demo",
+    "address": "123 AI Boulevard, Bangkok, Thailand",
+    "phone": "+66 123 456 789",
+    "email": "contact@venymlabs.com"
+  },
+  "footer": {
+    "copyright": "© 2025 Venym Labs. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "blockchainDevelopment": {
+    "title": "Blockchain Development Services",
+    "subtitle": "Innovative Solutions for Blockchain Projects",
+    "description": "We provide a comprehensive range of blockchain development services, from smart contracts to decentralized applications.",
+    "servicesTitle": "Our Blockchain Services",
+    "servicesSubtitle": "Comprehensive blockchain solutions tailored for your business",
+    "service1": {
+      "title": "Blockchain Development",
+      "description": "End-to-end blockchain solutions tailored to your business needs."
+    },
+    "service2": {
+      "title": "Smart Contract Development",
+      "description": "Secure and efficient smart contract development and auditing."
+    },
+    "service3": {
+      "title": "Decentralized App Development",
+      "description": "Building robust and scalable decentralized applications."
+    },
+    "service4": {
+      "title": "Blockchain Consulting",
+      "description": "Expert guidance and strategic advice for your blockchain initiatives."
+    },
+    "technologies": {
+      "title": "Technologies We Use",
+      "subtitle": "We specialize in developing on the most popular and reliable blockchain platforms",
+      "description": "Our team has extensive experience working with a wide range of blockchain technologies, ensuring we can deliver the right solution for your specific needs.",
+      "customSolutions": "Need a custom blockchain solution? Our experts can develop on any blockchain platform to meet your specific requirements."
+    },
+    "caseStudies": {
+      "title": "Success Stories",
+      "subtitle": "Real-world blockchain solutions we've delivered for clients in Thailand and beyond"
+    },
+    "seo": {
+      "title": "Blockchain Development Services in Thailand | Venym Labs",
+      "description": "Leading blockchain development company in Thailand. Expert smart contract development, DApp creation, and blockchain consulting services in Bangkok and across Thailand.",
+      "keywords": "blockchain development thailand, blockchain services bangkok, smart contract development thailand, dapp development thailand, blockchain consulting bangkok, ethereum development thailand, blockchain experts thailand, thai blockchain developers"
+    }
+  },
+  "blockchainDevelopment.technologies.smartContracts": "Smart Contract Development",
+  "blockchainDevelopment.technologies.smartContractsDesc": "Secure and efficient smart contract development for various use cases",
+  "blockchainDevelopment.technologies.dao": "DAO Creation",
+  "blockchainDevelopment.technologies.daoDesc": "Decentralized Autonomous Organization setup and management",
+  "blockchainDevelopment.technologies.nft": "NFT Marketplace",
+  "blockchainDevelopment.technologies.nftDesc": "Custom NFT marketplace solutions",
+  "blockchainDevelopment.technologies.defi": "DeFi Protocols",
+  "blockchainDevelopment.technologies.defiDesc": "Implementation of decentralized finance protocols",
+  "blockchainDevelopment.technologies.migration": "Blockchain Migration",
+  "blockchainDevelopment.technologies.migrationDesc": "Seamless blockchain migration services",
+  "blockchainDevelopment.technologies.smartContractsDesc": "Secure and efficient smart contract development for various use cases",
+  "blockchainDevelopment.technologies.dao": "DAO Creation",
+  "blockchainDevelopment.technologies.daoDesc": "Decentralized Autonomous Organization setup and management",
+  "blockchainDevelopment.technologies.nft": "NFT Marketplace",
+  "blockchainDevelopment.technologies.nftDesc": "Custom NFT marketplace solutions",
+  "blockchainDevelopment.technologies.defi": "DeFi Protocols",
+  "blockchainDevelopment.technologies.defiDesc": "Implementation of decentralized finance protocols",
+  "blockchainDevelopment.technologies.migration": "Blockchain Migration",
+  "blockchainDevelopment.technologies.migrationDesc": "Seamless blockchain migration services"
+}
