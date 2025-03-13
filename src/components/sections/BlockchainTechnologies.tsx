@@ -15,7 +15,6 @@ const technologies = [
   { id: 'arbitrum', name: 'Arbitrum', logo: '/logos/arbitrum.svg', description: 'Layer 2 scaling' },
   { id: 'optimism', name: 'Optimism', logo: '/logos/optimism.svg', description: 'Optimistic rollups' },
   { id: 'base', name: 'Base', logo: '/logos/base.svg', description: 'Enterprise solutions' },
-  { id: 'wallet', name: 'Multi-chain Wallets', logo: '/logos/wallet.png', description: 'Seamless wallet integration' },
 ];
 
 // Technology card component
