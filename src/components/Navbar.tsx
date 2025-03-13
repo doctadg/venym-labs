@@ -10,6 +10,7 @@ import { useTheme as useCustomTheme } from '../theme/ThemeProvider';
 import { useSpring as useReactSpring } from 'react-spring';
 import anime from 'animejs';
 import EnhancedLanguageToggle from './EnhancedLanguageToggle';
+import Link from 'next/link';
 
 // Enhanced SVG icons with animations
 const MenuIcon = () => {
@@ -138,46 +139,48 @@ const Logo = () => {
   };
 
   return (
-    <div
-      ref={logoRef}
-      style={{
-        fontWeight: 'bold',
-        fontSize: '1.5rem',
-        letterSpacing,
-        background: 'linear-gradient(90deg, #28b715, #5fea3d)',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        display: 'inline-block',
-        position: 'relative',
-        cursor: 'pointer',
-        transition: 'letter-spacing 0.3s ease',
-        transform: `scale(${springProps.scale}) rotate(${springProps.rotateZ}deg)`
-      }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <span>Venym Labs</span>
-      <motion.div
+    <Link href="/" style={{ textDecoration: 'none' }}>
+      <div
+        ref={logoRef}
         style={{
-          position: 'absolute',
-          bottom: -2,
-          left: 0,
-          right: 0,
-          height: '2px',
-          background: 'linear-gradient(90deg, #28b715, #5fea3d, #28b715)',
-          backgroundSize: '200% 100%',
-          opacity: 0.7
+          fontWeight: 'bold',
+          fontSize: '1.5rem',
+          letterSpacing,
+          background: 'linear-gradient(90deg, #28b715, #5fea3d)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          display: 'inline-block',
+          position: 'relative',
+          cursor: 'pointer',
+          transition: 'letter-spacing 0.3s ease',
+          transform: `scale(${springProps.scale}) rotate(${springProps.rotateZ}deg)`
         }}
-        animate={{
-          backgroundPosition: ['0% 0%', '100% 0%'],
-        }}
-        transition={{
-          duration: 3,
-          ease: 'linear',
-          repeat: Infinity,
-        }}
-      />
-    </div>
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <span>Venym Labs</span>
+        <motion.div
+          style={{
+            position: 'absolute',
+            bottom: -2,
+            left: 0,
+            right: 0,
+            height: '2px',
+            background: 'linear-gradient(90deg, #28b715, #5fea3d, #28b715)',
+            backgroundSize: '200% 100%',
+            opacity: 0.7
+          }}
+          animate={{
+            backgroundPosition: ['0% 0%', '100% 0%'],
+          }}
+          transition={{
+            duration: 3,
+            ease: 'linear',
+            repeat: Infinity,
+          }}
+        />
+      </div>
+    </Link>
   );
 };
 
