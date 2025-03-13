@@ -57,6 +57,11 @@ const BlockchainDevelopmentCard: React.FC<BlockchainDevelopmentCardProps> = ({ s
         border: `2px solid ${theme.palette.divider}`,
         borderRadius: '16px',
         transition: 'all 0.3s ease',
+        backgroundColor: theme.palette.mode === 'dark' 
+          ? theme.palette.background.paper 
+          : `rgba(40, 183, 21, 0.05)`,
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)',
         '&:hover': {
           borderColor: theme.palette.primary.main,
           boxShadow: theme.shadows[12],
@@ -99,7 +104,7 @@ const BlockchainDevelopmentCard: React.FC<BlockchainDevelopmentCardProps> = ({ s
         gutterBottom 
         sx={{
           fontWeight: 600,
-          color: theme.palette.text.primary,
+          color: theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark,
           mb: 2
         }}
       >
@@ -107,10 +112,10 @@ const BlockchainDevelopmentCard: React.FC<BlockchainDevelopmentCardProps> = ({ s
       </Typography>
       <Typography 
         variant="body2" 
-        color="text.secondary"
         sx={{
           px: 2,
-          lineHeight: 1.6
+          lineHeight: 1.6,
+          color: theme.palette.mode === 'dark' ? theme.palette.text.secondary : 'rgba(0, 0, 0, 0.7)'
         }}
       >
         {currentService.description}

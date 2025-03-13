@@ -53,6 +53,11 @@ const TechnologyCard: React.FC<TechnologyCardProps> = ({ technology, index }) =>
           justifyContent: 'center',
           borderRadius: '16px',
           transition: 'all 0.3s ease',
+          backgroundColor: theme.palette.mode === 'dark' 
+            ? theme.palette.background.paper 
+            : `rgba(40, 183, 21, 0.05)`,
+          backdropFilter: 'blur(10px)',
+          WebkitBackdropFilter: 'blur(10px)',
           '&:hover': {
             boxShadow: '0 8px 25px rgba(40, 183, 21, 0.15)',
             borderColor: theme.palette.primary.main,
@@ -85,6 +90,7 @@ const TechnologyCard: React.FC<TechnologyCardProps> = ({ technology, index }) =>
           sx={{
             fontWeight: 600,
             textAlign: 'center',
+            color: theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark,
           }}
         >
           {technology.name}
@@ -92,7 +98,7 @@ const TechnologyCard: React.FC<TechnologyCardProps> = ({ technology, index }) =>
         <Typography
           variant="body2"
           sx={{
-            color: theme.palette.text.secondary,
+            color: theme.palette.mode === 'dark' ? theme.palette.text.secondary : 'rgba(0, 0, 0, 0.7)',
             textAlign: 'center',
             mt: 1,
           }}
@@ -113,7 +119,9 @@ const BlockchainTechnologies = () => {
     <Box
       sx={{
         py: { xs: 8, md: 12 },
-        backgroundColor: theme.palette.background.default,
+        backgroundColor: theme.palette.mode === 'dark'
+          ? theme.palette.background.default
+          : `linear-gradient(to bottom right, ${theme.palette.primary.main}11, ${theme.palette.secondary.light}22)`,
       }}
     >
       <Container maxWidth="lg">
@@ -144,7 +152,7 @@ const BlockchainTechnologies = () => {
             sx={{
               maxWidth: '700px',
               mx: 'auto',
-              color: theme.palette.text.secondary,
+              color: theme.palette.mode === 'dark' ? theme.palette.text.secondary : 'rgba(0, 0, 0, 0.7)',
               mb: 4,
             }}
           >
@@ -159,6 +167,7 @@ const BlockchainTechnologies = () => {
               maxWidth: '800px',
               mx: 'auto',
               mb: 6,
+              color: theme.palette.mode === 'dark' ? theme.palette.text.primary : 'rgba(0, 0, 0, 0.8)',
             }}
           >
             <FormattedMessage 

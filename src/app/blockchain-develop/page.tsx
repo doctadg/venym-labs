@@ -11,12 +11,13 @@ import dynamic from 'next/dynamic';
 const BlockchainSEO = dynamic(() => import('@/components/BlockchainSEO'), { ssr: false });
 import { usePathname, useSearchParams } from 'next/navigation';
 
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography, useTheme } from '@mui/material';
 import { FormattedMessage } from 'react-intl';
 import Contact from '@/components/sections/Contact';
 
 // Client component that safely uses useSearchParams
 function BlockchainContent() {
+  const theme = useTheme();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const locale = searchParams.get('locale') || 'en';
@@ -45,15 +46,32 @@ function BlockchainContent() {
       <Box
         sx={{
           py: { xs: 8, md: 12 },
-          backgroundColor: 'inherit'
+          backgroundColor: theme.palette.mode === 'dark' 
+            ? theme.palette.background.paper 
+            : `linear-gradient(to bottom right, ${theme.palette.primary.main}11, ${theme.palette.primary.light}22)`
         }}
       >
         <Container maxWidth="lg">
           <Box mb={8}>
-            <Typography variant="h2" component="h2" gutterBottom align="center">
+            <Typography 
+              variant="h2" 
+              component="h2" 
+              gutterBottom 
+              align="center"
+              sx={{
+                color: theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark
+              }}
+            >
               <FormattedMessage id="blockchainDevelopment.servicesTitle" defaultMessage="Our Blockchain Services" />
             </Typography>
-            <Typography variant="h5" color="text.secondary" mb={4} align="center">
+            <Typography 
+              variant="h5" 
+              mb={4} 
+              align="center"
+              sx={{
+                color: theme.palette.mode === 'dark' ? theme.palette.text.secondary : 'rgba(0, 0, 0, 0.7)'
+              }}
+            >
               <FormattedMessage id="blockchainDevelopment.servicesSubtitle" defaultMessage="Comprehensive blockchain solutions tailored for your business" />
             </Typography>
           </Box>

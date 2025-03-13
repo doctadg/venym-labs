@@ -53,13 +53,16 @@ const ContactInfoItem: React.FC<ContactInfoItemProps> = ({ icon, title, content 
           sx={{
             fontWeight: 600,
             mb: 0.5,
+            color: theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark,
           }}
         >
           {title}
         </Typography>
         <Typography
           variant="body2"
-          color="text.secondary"
+          sx={{
+            color: theme.palette.mode === 'dark' ? theme.palette.text.secondary : 'rgba(0, 0, 0, 0.7)',
+          }}
         >
           {content}
         </Typography>
@@ -118,7 +121,9 @@ const Contact = () => {
       id="contact"
       sx={{
         py: { xs: 8, md: 12 },
-        backgroundColor: theme.palette.background.default,
+        backgroundColor: theme.palette.mode === 'dark'
+          ? theme.palette.background.default
+          : `linear-gradient(to bottom right, ${theme.palette.primary.light}11, ${theme.palette.secondary.main}22)`,
       }}
     >
       <Container maxWidth="lg">
@@ -149,7 +154,7 @@ const Contact = () => {
             sx={{
               maxWidth: '700px',
               mx: 'auto',
-              color: theme.palette.text.secondary,
+              color: theme.palette.mode === 'dark' ? theme.palette.text.secondary : 'rgba(0, 0, 0, 0.7)',
             }}
           >
             <FormattedMessage id="contact.subtitle" />
@@ -171,6 +176,11 @@ const Contact = () => {
                   p: { xs: 3, md: 5 },
                   borderRadius: '16px',
                   boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)',
+                  backgroundColor: theme.palette.mode === 'dark' 
+                    ? theme.palette.background.paper 
+                    : `rgba(40, 183, 21, 0.05)`,
+                  backdropFilter: 'blur(10px)',
+                  WebkitBackdropFilter: 'blur(10px)',
                 }}
               >
                 <Typography
@@ -179,6 +189,7 @@ const Contact = () => {
                   sx={{
                     fontWeight: 700,
                     mb: 4,
+                    color: theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark,
                   }}
                 >
                   Get in Touch
@@ -198,6 +209,9 @@ const Contact = () => {
                         sx={{
                           '& .MuiOutlinedInput-root': {
                             borderRadius: '8px',
+                            backgroundColor: theme.palette.mode === 'dark' 
+                              ? 'rgba(255, 255, 255, 0.05)' 
+                              : 'rgba(40, 183, 21, 0.03)',
                           },
                         }}
                       />
@@ -215,6 +229,9 @@ const Contact = () => {
                         sx={{
                           '& .MuiOutlinedInput-root': {
                             borderRadius: '8px',
+                            backgroundColor: theme.palette.mode === 'dark' 
+                              ? 'rgba(255, 255, 255, 0.05)' 
+                              : 'rgba(40, 183, 21, 0.03)',
                           },
                         }}
                       />
@@ -233,6 +250,9 @@ const Contact = () => {
                         sx={{
                           '& .MuiOutlinedInput-root': {
                             borderRadius: '8px',
+                            backgroundColor: theme.palette.mode === 'dark' 
+                              ? 'rgba(255, 255, 255, 0.05)' 
+                              : 'rgba(40, 183, 21, 0.03)',
                           },
                         }}
                       />
@@ -285,6 +305,7 @@ const Contact = () => {
                   sx={{
                     fontWeight: 700,
                     mb: 4,
+                    color: theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark,
                   }}
                 >
                   Contact Information
@@ -321,6 +342,7 @@ const Contact = () => {
                     sx={{
                       fontWeight: 600,
                       mb: 2,
+                      color: theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark,
                     }}
                   >
                     Want to see a demo?
@@ -329,6 +351,7 @@ const Contact = () => {
                     variant="body2"
                     sx={{
                       mb: 3,
+                      color: theme.palette.mode === 'dark' ? theme.palette.text.secondary : 'rgba(0, 0, 0, 0.7)',
                     }}
                   >
                     Schedule a personalized demo with our product specialists to see how our AI agents can transform your business.
