@@ -81,7 +81,7 @@ const commonThemeSettings = {
 export const lightTheme = createTheme({
   ...commonThemeSettings,
   palette: {
-    mode: 'light',
+    mode: 'dark',
     primary: {
       main: '#28b715',
       light: '#5fea3d',
@@ -119,14 +119,14 @@ export const lightTheme = createTheme({
       contrastText: '#ffffff',
     },
     background: {
-      default: '#ffffff',
-      paper: '#f8f9fa',
+      default: '#121212',
+      paper: '#1e1e1e',
     },
     text: {
-      primary: '#212121',
-      secondary: '#5f6368',
+      primary: '#ffffff',
+      secondary: '#b0b0b0',
     },
-    divider: 'rgba(0, 0, 0, 0.12)',
+    divider: 'rgba(255, 255, 255, 0.12)',
   },
 });
 

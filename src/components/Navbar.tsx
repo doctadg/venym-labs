@@ -197,6 +197,7 @@ const Logo = () => {
 // Navigation links
 const navLinks = [
   { id: 'blockchain-develop', path: '/blockchain-develop', isPage: true },
+  { id: 'ai-agent-develop', path: '/ai-agent-develop', isPage: true },
   { id: 'pricing', path: '#pricing' },
   { id: 'contact', path: '#contact' },
 ];

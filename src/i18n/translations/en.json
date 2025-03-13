@@ -8,6 +8,7 @@
     "agents": "AI Agents",
     "blockchain": "Blockchain",
     "blockchain-develop": "Blockchain Development",
+    "ai-agent-develop": "AI Agent Development",
     "services": "Services",
     "pricing": "Pricing",
     "memberships": "Memberships",
@@ -219,5 +220,28 @@
   "blockchainDevelopment.technologies.defi": "DeFi Protocols",
   "blockchainDevelopment.technologies.defiDesc": "Implementation of decentralized finance protocols",
   "blockchainDevelopment.technologies.migration": "Blockchain Migration",
-  "blockchainDevelopment.technologies.migrationDesc": "Seamless blockchain migration services"
+  "blockchainDevelopment.technologies.migrationDesc": "Seamless blockchain migration services",
+  
+  "aiAgentDevelopment": {
+    "title": "AI Agent Development Services",
+    "subtitle": "Custom AI Agents for Business Transformation",
+    "description": "We develop intelligent AI agents that automate tasks, enhance decision-making, and transform business operations. Our custom solutions leverage cutting-edge language models and specialized training to deliver agents that understand your business context and drive real results.",
+    "servicesTitle": "Our AI Agent Services",
+    "servicesSubtitle": "Comprehensive AI agent solutions tailored for your business",
+    "technologies": {
+      "title": "Technologies We Use",
+      "subtitle": "We leverage cutting-edge AI technologies to build powerful, intelligent agents",
+      "description": "Our team has extensive experience working with a wide range of AI and machine learning technologies, ensuring we can deliver the right solution for your specific needs.",
+      "customSolutions": "Need a custom AI solution? Our experts can work with any AI framework or model to meet your specific requirements."
+    },
+    "caseStudies": {
+      "title": "Success Stories",
+      "subtitle": "Real-world AI agent solutions we've delivered for clients in Thailand and beyond"
+    },
+    "seo": {
+      "title": "AI Agent Development Services in Thailand | Venym Labs",
+      "description": "Leading AI agent development company in Thailand. Expert custom agent development, LLM fine-tuning, and AI consulting services in Bangkok and across Thailand.",
+      "keywords": "ai agent development thailand, ai services bangkok, llm fine-tuning thailand, custom ai agents thailand, ai consulting bangkok, ai development thailand, ai experts thailand, thai ai developers"
+    }
+  }
 }
